@@ -31,7 +31,7 @@ namespace Manlaan.Mounts.Views
             {
                 Label l = new Label
                 {
-                    Text = "labelthing",
+                    Text = "labelthing" + i,
                     Location = new Point(30, i * 30),
                     Width = 800,
                     AutoSizeHeight = true,
