@@ -18,6 +18,15 @@ namespace Manlaan.Mounts.Views
 
         protected override void Build(Container buildPanel)
         {
+            var thingsListPanel = new Panel
+            {
+                CanScroll = true,
+                Parent = buildPanel,
+                Width = 600,
+                Height = 600,
+                Location = new Point(0, 0)
+            };
+
             foreach (int i in Enumerable.Range(1, 100).ToList())
             {
                 Label l = new Label
@@ -29,7 +38,7 @@ namespace Manlaan.Mounts.Views
                     WrapText = true,
                     Font = GameService.Content.DefaultFont18,
                     HorizontalAlignment = HorizontalAlignment.Left,
-                    Parent = buildPanel
+                    Parent = thingsListPanel
                 };
             }            
         }
