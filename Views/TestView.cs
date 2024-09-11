@@ -23,8 +23,11 @@ namespace Manlaan.Mounts.Views
                 CanScroll = true,
                 Parent = buildPanel,
                 Width = 600,
-                Height = 600,
-                Location = new Point(0, 0)
+                Height = 200,
+                Location = new Point(0, 0),
+                ShowBorder = true,
+                WidthSizingMode = SizingMode.Fill,
+                HeightSizingMode = SizingMode.Fill,
             };
 
             foreach (int i in Enumerable.Range(1, 100).ToList())
